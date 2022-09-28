@@ -117,3 +117,9 @@ deletebtn.addEventListener('click',()=>{
 })
 
 
+const logo=document.querySelector('.logo');
+const nav_items=document.querySelector('.nav-items');
+
+logo.addEventListener('click',()=>{
+    nav_items.classList.toggle("nav-toggle") ;
+})

@@ -156,13 +156,39 @@ footer{
     font-size: 12px;
 }
 @media screen and (max-width:600px) {
-    header nav ul{
-     display: none;
+    header{
+        z-index:1;
     }
- 
-    footer{
-     font-size: 11px;
-     text-align: center;
-    }
-     
- }
+   header nav ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgba(26, 25, 25,.8);
+    color: white;
+    width: 100%;
+    top: 15vh;
+    text-align: center;
+    transform: translateY(-400px);
+    transition: all .5s ease;
+  
+   }
+  
+   .nav-toggle{
+    transform: translateY(0%);
+   }
+   .logo{
+    cursor: pointer;
+   }
+   header nav ul li{
+    margin: 50px;
+   }
+   header nav ul li a{
+    color: whitesmoke;
+   }
+
+   footer{
+    font-size: 11px;
+    text-align: center;
+   }
+    
+}
