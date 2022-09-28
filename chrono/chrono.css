@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    
+    height: 15vh;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0px 0px 15px 10px rgba(153,153,153, 1);
+}
+header nav {
+    display: flex;
+    height: 15vh;
+    justify-content: space-around;
+    align-items: center;
+
+}
+header nav .logo{
+    font-family: Orbitron;
+    font-size: 32px;
+    letter-spacing: 2px;
+
+}
+header nav .logo span{
+    color: green;
+    font-size: 40px;
+}
+header nav .logo::first-letter{
+    color: yellow;
+    font-size: 40px;
+
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+
+}
+header nav ul li a{
+    text-decoration: inherit;
+    margin-left: 30px;
+    font-family: Orbitron;
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+
+}
+#all-clear:hover{
+    background-color: black;
+    color: white;
+    transform: scale(.9);
+
+}
+#calc:hover{
+    color: red;
+    transition: .5s ease-in-out;
+}
+#chrono:hover{
+    color:green;
+    transition: .5s ease-in-out;
+}
+#monit:hover{
+    color: yellow;
+    transition: .5s ease-in-out;
+}
+
+.container{
+    /* height: 410px; */
+    max-width: 410px;
+    margin: 10vh auto 0 auto;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 60px 1px rgba(153,153,153, 1);
+    outline: none;
+    user-select: none;
+    font-family: 'Orbitron', sans-serif;
+}
+.container h2{
+    text-transform: capitalize;
+    margin-top: 70px;
+    margin-bottom: -70px;
+    color: yellowgreen;
+}
+.chrono{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.chrono h1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 30px;  
+}
+
+#demarer,#tour{
+    margin: 20px;
+    height: 50px;
+    width: 120px;
+    text-align: center;
+    border: none;
+    border-radius: 10%;
+    font-family: 'Orbitron',sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 2px rgba(153,153,153, 1);
+
+}
+#heure{
+    color: red;
+}
+#demarer{
+   
+
+     background-color: rgb(0, 128, 0);
+     color: white;
+}
+#demarer:hover{
+    background-color:rgba(0, 128, 0,.8) ;
+    transition: .5s ease-in-out;
+}
+#tour{
+
+    color: rgb(150, 129, 129);
+}
+
+table{
+    display: none;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    color: darkgreen;
+    font-weight:500 ;
+    border: 1px solid  rgba(153,153,153, 1);
+ 
+    /* box-shadow: inset 0px 0px 30px 2px rgba(153,153,153, 1);    */
+}
+table tr{
+    line-height: 35px;
+}
+
+table td{
+    width: 130px;
+    text-align: center;
+}
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+}

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    
+    height: 15vh;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0px 0px 15px 10px rgba(153,153,153, 1);
+}
+header nav {
+    display: flex;
+    height: 15vh;
+    justify-content: space-around;
+    align-items: center;
+
+}
+header nav .logo{
+    font-family: Orbitron;
+    font-size: 32px;
+    letter-spacing: 2px;
+
+}
+header nav .logo span{
+    color: green;
+    font-size: 40px;
+}
+header nav .logo::first-letter{
+    color: yellow;
+    font-size: 40px;
+
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+
+}
+header nav ul li a{
+    text-decoration: inherit;
+    margin-left: 30px;
+    font-family: Orbitron;
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+
+}
+#all-clear:hover{
+    background-color: black;
+    color: white;
+    transform: scale(.9);
+
+}
+#calc:hover{
+    color: red;
+    transition: .5s ease-in-out;
+}
+#chrono:hover{
+    color:green;
+    transition: .5s ease-in-out;
+}
+#monit:hover{
+    color: yellow;
+    transition: .5s ease-in-out;
+}
+
+.container{
+    max-width: 410px;
+    margin: 10vh auto 0 auto;
+    padding: 5px;
+    box-shadow: 0px 0px 60px 1px rgba(153,153,153, 1);
+    outline: none;
+    user-select: none;
+    font-family: 'Orbitron', sans-serif;
+}
+.output{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    word-wrap: break-word;
+    word-break: break-all;
+    width: 100%;
+    height: 110px;
+    line-height: 50px;
+    font-family: 'Orbitron', sans-serif;
+    border: 1px solid rgb(179, 179, 58);
+    outline: none;
+    user-select: none;
+    padding-inline: 25px;
+    box-shadow: inset 2px 2px 20px 1px rgba(153,153,153, 1);
+
+}
+.output .current{
+    font-weight: 500;
+    font-size: xx-large;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.button{
+    max-width: 100px;
+    font-size: 18px;
+    border: 1px solid rgb(179, 179, 58);
+    text-align: center;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: x-large;
+    box-shadow:0px 0px 15px 2px rgba(153,153,153, 1);
+
+}
+#equal{
+    background-color: rgb(252, 252, 17);
+}
+#equal:hover{
+    transform: scale(0.9);
+}
+#delete{
+    font-size: xx-large;
+   
+}
+#delete:hover{
+    font-size: xx-large;
+    transform: scale(0.9);
+    background-color: red;
+}
+.button:hover{
+    background-color: green;
+    transition: 0.5s ease-in-out;
+    color: aliceblue;
+   
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+}
